@@ -69,9 +69,12 @@ function showQuestion() {
         const button = document.createElement("button");
         button.textContent = choice;
         button.addEventListener("click", function () {
+            const correctAudio = new Audio("./assets/sfx/correct.wav");
+            const incorrectAudio = new Audio("./assets/sfx/incorrect.wav");
             if (choice === currentQuestion.answer) {
                 feedback.textContent = "Correct!";
                 feedback.style.display = "block";
+                correctAudio.play();
                 setTimeout(function () {
                     feedback.style.display = "none";
                 }, 1000);
@@ -79,6 +82,7 @@ function showQuestion() {
             } else {
                 feedback.textContent = "Incorrect!";
                 feedback.style.display = "block";
+                incorrectAudio.play();
                 setTimeout(function () {
                     feedback.style.display = "none";
                 }, 1000);
