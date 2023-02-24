@@ -101,6 +101,7 @@ function showQuestion() {
 }
 
 function endQuiz() {
+    console.log("end-quiz");
     clearInterval(timerId);
     questionTitle.parentElement.style.display = "none";
     endScreen.style.display = "block";

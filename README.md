@@ -10,7 +10,7 @@ Simply open up the deployed link [Code-Quiz](https://realstranger01.github.io/Co
 
 You need to have a modern browser able to handle html5 and css.
 
-Some popular browsers are:
+Some popular browsers are:  
 ```
 
 Google Chrome
